@@ -7,7 +7,7 @@
     <% @cart.line_items.each do |item| %>
       <article class="producto">
         <%= image_tag(item.product.image_url) %>
-        <h3><%= item.product.title %></h3>
+        <h3><%= item.quantity %> x <%= item.product.title %></h3>
         <p><%= item.product.description %></p>
       </article>
     <% end %>
