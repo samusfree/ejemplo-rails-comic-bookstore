@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RailsComicBookstore</title>
+  <title>The Comic Bookstore</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<body>
+  <header>
+    <img class="logo" src="imagenes/logo.png" alt="The Comic Bookstore" />
+    <h1>The Comic Bookstore</h1>
+  </header>
+  <nav>
+    <ul>
+      <a href="#">
+        <li>Cómics</li>
+      </a>
+      <a href="#">
+        <li>Novelas</li>
+      </a>
+      <a href="#">
+        <li>Réplicas</li>
+      </a>
+    </ul>
+  </nav>
+  
+  <%= yield %>
+  
+  <footer>© DevAcademy.la, 2014</footer>  
 
-<%= yield %>
 
 </body>
 </html>
