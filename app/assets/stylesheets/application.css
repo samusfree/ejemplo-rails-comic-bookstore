@@ -45,6 +45,7 @@ nav {
   float: left;
   padding: 1em 2em;
   width: 20%;
+  max-width: 150px;
 }
 nav ul { padding: 0; }
 nav ul a {
