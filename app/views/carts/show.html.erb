@@ -1,4 +1,14 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+	<p id="notice"><%= notice %></p>
+<% end %>
 
-<%= link_to 'Edit', edit_cart_path(@cart) %> |
-<%= link_to 'Back', carts_path %>
+<section class="productos">
+    <h2>Mi carrito</h2>
+    <% @cart.line_items.each do |item| %>
+      <article class="producto">
+        <%= image_tag(item.product.image_url) %>
+        <h3><%= item.product.title %></h3>
+        <p><%= item.product.description %></p>
+      </article>
+    <% end %>
+</section>
