@@ -11,4 +11,5 @@
         <p><%= item.product.description %></p>
       </article>
     <% end %>
+    <%= button_to "Limpiar carrito", @cart, method: :delete, data: { confirm: "Estas seguro?" } %>
 </section>
