@@ -1,0 +1,15 @@
+<% if notice %>
+	<p id="notice"><%= notice %></p>
+<% end %>
+
+<section class="productos">
+    <h2>Catálogo de productos</h2>
+    <% @products.each do |product| %>
+      <article class="producto">
+        <%= image_tag(product.image_url) %>
+        <h3><%= product.title %></h3>
+        <p><%= product.description %></p>
+        <span><%= number_to_currency(product.price) %></span>
+      </article>
+    <% end %>
+</section>
