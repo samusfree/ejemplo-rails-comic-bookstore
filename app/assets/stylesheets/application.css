@@ -76,6 +76,11 @@ section {
 h3, h2, p {
   margin-bottom: .5em;
 }
+.total{
+  color:green;
+  display: inline-block;
+  margin-bottom: 15px;
+}
 button {
   background-color: #2ecc71;
   border: 1px solid #27ae60;
